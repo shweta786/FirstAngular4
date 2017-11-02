@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Angular Application';
+  disableButton = true;
+  status = 'Not clicked yet';
+  onButtonClick() {
+    this.status = 'clicked';
+  }
 }
